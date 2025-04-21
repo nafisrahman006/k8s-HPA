@@ -73,7 +73,7 @@ spec:
           averageUtilization: 40
 ```
 
-his configuration instructs Kubernetes to automatically scale the number of nginx-deployment pods between 1 and 10, depending on CPU usage. When the CPU utilization exceeds 40%, the HPA controller creates additional replicas to handle the load.
+This configuration instructs Kubernetes to automatically scale the number of nginx-deployment pods between 1 and 10, depending on CPU usage. When the CPU utilization exceeds 40%, the HPA controller creates additional replicas to handle the load.
 
 ## Experince the autoscalling from dashboard
 To simulate high traffic and trigger autoscaling, we generate continuous requests to the nginx-service using a busybox pod:
